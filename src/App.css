@@ -1,22 +1,100 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(73, 230, 120, .3);
+  
 }
 
-.App-link {
-  color: #09d3ac;
+.container{
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  margin-bottom: 35px;
+  background-color: #f0f0f0;
+  width: 20%;
+  border: 1px solid #bbb;
+  transition: 300ms ease all;
+}
+
+.container:hover{
+  box-shadow: 2px 2px 4px 2px #bbb;
+}
+
+.container .active {
+  box-shadow: 2px 2px 4px 2px #bbb;
+}
+
+.container img {
+  width: 100%;
+}
+
+.recipes{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.search{
+  height: 10vh;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.search input {
+  width: 300px;
+}
+
+.search-button{
+  height: 33px;
+  width: 100px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: 300ms ease all;
+}
+
+.search-button:hover {
+  border-color: #6bf;
+}
+
+.search-bar{
+  width: 30%;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+h1{
+  margin-top: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  color: #777;
+  width: 250px;
+  display:flex;
+  align-items: center;
+}
+
+.title{
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  color: #777;
+}
+
+input {
+  transition: 300ms all ease;
+  border: 1px solid #bbb!important;
+}
+
+input:hover {
+  border: 1px solid #6bf!important;
 }
